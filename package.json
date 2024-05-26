@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "newrelic": "^11.17.0"
   },
   "author": "Santiago Difrancisco",
   "license": "ISC"
