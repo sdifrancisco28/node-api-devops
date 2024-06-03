@@ -1,12 +1,12 @@
-const { createServer } = require('node:http');
-require('newrelic');
-const hostname = '0.0.0.0';
-const port = 3000;
-const app = createServer((req, res) => {
-  res.statusCode = 200;
-  res.end('Hello World, How are u?');
-});
+const express = require('express')
+const app = express()
 
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}`);
-});
+app.get('/', (req, res) => {
+  res.status(200).send('Hello world')
+})
+
+const server = app.listen(3000, () => {
+  console.log('Server is running on port 3000')
+})
+
+module.exports = { app, server }
