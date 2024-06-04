@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "express": "^4.19.2",
-    "newrelic": "^11.17.0"
+    "newrelic": "^11.18.0"
   },
   "author": "Santiago Difrancisco",
   "license": "ISC",
