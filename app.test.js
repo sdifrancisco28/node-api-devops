@@ -1,6 +1,8 @@
 const request = require('supertest')
 const { app, server } = require('./app.js')
 
+jest.mock('newrelic', () => jest.fn())
+
 describe('GET /', () => {
   afterAll((done) => {
     server.close(done)
