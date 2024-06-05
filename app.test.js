@@ -1,6 +1,8 @@
 const request = require('supertest')
 const { app, server } = require('./app.js')
 
+jest.useFakeTimers()
+
 describe('GET /', () => {
   afterAll((done) => {
     server.close(done)
