@@ -1,7 +1,7 @@
 const request = require('supertest')
 const { app, server } = require('./app.js')
 
-jest.useFakeTimers()
+jest.mock('newrelic', () => jest.fn())
 
 describe('GET /', () => {
   afterAll((done) => {
