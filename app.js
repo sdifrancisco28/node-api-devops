@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
 
 const server = app.listen(3000, () => {
   console.log('My Server is running on port 3000!')
+  console.log('Prueba TP')
 })
 
 module.exports = { app, server }
